@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Demander un devis — Digitalia Agency</title>
+<meta name="description" content="Demandez un devis gratuit à Digitalia Agency pour votre projet digital.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">Digitalia<span>.</span></a>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="contact.html" class="btn btn-primary" data-track="cta_click" data-cta-location="header">
+        <span class="btn-text-full">Demander un devis</span><span class="btn-text-short">Devis</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <span class="section-tag">Contact</span>
+    <h1>Demandez votre devis gratuit</h1>
+    <p class="breadcrumb">Accueil / Contact</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="contact-layout">
+
+      <div class="form-card">
+        <div id="formAlertSuccess" class="form-alert success">
+          Merci ! Votre demande a bien été envoyée. Notre équipe vous recontacte sous 24h.
+          <br><small>(Démonstration : aucune donnée n'a réellement été transmise à un serveur.)</small>
+        </div>
+        <div id="formAlertError" class="form-alert error">
+          Merci de corriger les champs indiqués en rouge avant d'envoyer votre demande.
+        </div>
+
+        <form id="devisForm" novalidate>
+
+          <div class="form-row">
+            <div class="form-group" data-field="nom">
+              <label for="nom">Nom complet <span class="req">*</span></label>
+              <input type="text" id="nom" name="nom" placeholder="Jean Dupont">
+              <span class="field-error"></span>
+            </div>
+            <div class="form-group" data-field="email">
+              <label for="email">Email <span class="req">*</span></label>
+              <input type="email" id="email" name="email" placeholder="jean.dupont@exemple.com">
+              <span class="field-error"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group" data-field="telephone">
+              <label for="telephone">Téléphone <span class="req">*</span></label>
+              <input type="tel" id="telephone" name="telephone" placeholder="06 12 34 56 78">
+              <span class="field-error"></span>
+            </div>
+            <div class="form-group" data-field="entreprise">
+              <label for="entreprise">Entreprise</label>
+              <input type="text" id="entreprise" name="entreprise" placeholder="Nom de votre entreprise">
+              <span class="field-error"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group" data-field="service">
+              <label for="service">Service souhaité <span class="req">*</span></label>
+              <select id="service" name="service">
+                <option value="">Sélectionnez un service</option>
+                <option value="SEO">SEO</option>
+                <option value="Community Management">Community Management</option>
+                <option value="Création de contenu">Création de contenu</option>
+                <option value="Web Design">Web Design</option>
+                <option value="Publicité digitale">Publicité digitale</option>
+                <option value="Stratégie digitale">Stratégie digitale</option>
+              </select>
+              <span class="field-error"></span>
+            </div>
+            <div class="form-group" data-field="budget">
+              <label for="budget">Budget approximatif</label>
+              <select id="budget" name="budget">
+                <option value="">Sélectionnez une tranche</option>
+                <option value="< 1000€">Moins de 1 000 €</option>
+                <option value="1000-5000€">1 000 € – 5 000 €</option>
+                <option value="5000-10000€">5 000 € – 10 000 €</option>
+                <option value="> 10000€">Plus de 10 000 €</option>
+              </select>
+              <span class="field-error"></span>
+            </div>
+          </div>
+
+          <div class="form-group" data-field="message">
+            <label for="message">Message <span class="req">*</span></label>
+            <textarea id="message" name="message" placeholder="Décrivez votre projet en quelques lignes..."></textarea>
+            <span class="field-error"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+            Envoyer ma demande
+          </button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <div class="info-card">
+          <h4>Nos coordonnées</h4>
+          <div class="info-item" data-track="contact_click" data-contact-type="email">
+            <span>✉</span><span>contact@digitalia-agency.fr</span>
+          </div>
+          <div class="info-item" data-track="contact_click" data-contact-type="phone">
+            <span>☎</span><span>01 00 00 00 00</span>
+          </div>
+          <div class="info-item" data-track="contact_click" data-contact-type="address">
+            <span>⌂</span><span>12 rue des Entrepreneurs, 75000 Paris</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <h4>Délai de réponse</h4>
+          <p style="color:#C4CAE3; font-size:0.92rem;">Nous répondons à toutes les demandes de devis sous 24 heures ouvrées.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Digitalia<span>.</span></a>
+        <p>Agence de marketing digital accompagnant les entreprises dans leur croissance en ligne.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul><li><a href="index.html">Accueil</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">À propos</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul><li><a href="services.html#seo">SEO</a></li><li><a href="services.html#webdesign">Web Design</a></li><li><a href="services.html#pub">Publicité digitale</a></li><li><a href="services.html#strategie">Stratégie digitale</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul><li><a href="mailto:contact@digitalia-agency.fr" data-track="contact_click" data-contact-type="email">contact@digitalia-agency.fr</a></li><li><a href="tel:+33100000000" data-track="contact_click" data-contact-type="phone">01 00 00 00 00</a></li><li>12 rue des Entrepreneurs, Paris</li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Digitalia Agency — Projet universitaire fictif (L1 Marketing Digital)</span>
+      <span>Site de démonstration — aucune donnée réelle collectée</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

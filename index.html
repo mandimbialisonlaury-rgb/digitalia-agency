@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digitalia Agency — Agence de Marketing Digital</title>
+<meta name="description" content="Digitalia Agency accompagne les entreprises dans leur visibilité digitale : SEO, Community Management, Web Design, Publicité digitale et Stratégie digitale.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<!-- ============================================================
+     GOOGLE ANALYTICS 4 (GA4) — gtag.js
+     ACTION À FAIRE PAR L'ÉTUDIANT : remplacer G-XXXXXXXXXX par le
+     Measurement ID réel obtenu dans Google Analytics (voir PARTIE I
+     du guide). Ce code doit être copié à l'identique sur les 4 pages
+     (index.html, services.html, about.html, contact.html).
+     ============================================================ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">Digitalia<span>.</span></a>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="contact.html" class="btn btn-primary" data-track="cta_click" data-cta-location="header">
+        <span class="btn-text-full">Demander un devis</span><span class="btn-text-short">Devis</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-copy">
+      <span class="hero-eyebrow">Agence de marketing digital</span>
+      <h1>Votre visibilité en ligne, <em>pensée pour convertir</em>.</h1>
+      <p class="lead">Digitalia Agency conçoit des stratégies digitales sur mesure — SEO, contenu, publicité et web design — pour transformer vos visiteurs en clients.</p>
+      <div class="hero-cta">
+        <a href="contact.html" class="btn btn-primary" data-track="cta_click" data-cta-location="hero">Demander un devis</a>
+        <a href="services.html" class="btn btn-outline">Découvrir nos services</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="stat-row">
+        <div><div class="stat-num" data-count="120">0</div><div class="stat-label">Clients accompagnés</div></div>
+        <div><div class="stat-num" data-count="6">0</div><div class="stat-label">Expertises digitales</div></div>
+      </div>
+      <hr>
+      <div class="stat-row">
+        <div><div class="stat-num" data-count="98">0</div><div class="stat-label">% de satisfaction</div></div>
+        <div><div class="stat-num" data-count="4">0</div><div class="stat-label">Ans d'expérience</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRUST BAR ================= -->
+<section class="trust-bar" style="padding:40px 0;">
+  <div class="container">
+    <div><div class="trust-num" data-count="120">0</div><div class="trust-label">Projets livrés</div></div>
+    <div><div class="trust-num" data-count="45">0</div><div class="trust-label">Secteurs d'activité</div></div>
+    <div><div class="trust-num" data-count="98">0</div><div class="trust-label">% clients satisfaits</div></div>
+    <div><div class="trust-num" data-count="24">0</div><div class="trust-label">Heures de réponse</div></div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Nos expertises</span>
+      <h2>Six leviers pour développer votre présence digitale</h2>
+      <p>De la stratégie à l'exécution, nous couvrons l'ensemble du parcours digital de votre marque.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">◎</div>
+        <h3>SEO</h3>
+        <p>Optimisation du référencement naturel pour gagner en visibilité durable sur les moteurs de recherche.</p>
+        <a href="services.html#seo" class="btn btn-outline" data-track="service_click" data-service-name="SEO">En savoir plus</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">◐</div>
+        <h3>Community Management</h3>
+        <p>Gestion et animation de vos réseaux sociaux pour construire une communauté engagée.</p>
+        <a href="services.html#community" class="btn btn-outline" data-track="service_click" data-service-name="Community Management">En savoir plus</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">✎</div>
+        <h3>Création de contenu</h3>
+        <p>Contenus visuels et textuels pensés pour capter l'attention et renforcer votre image de marque.</p>
+        <a href="services.html#contenu" class="btn btn-outline" data-track="service_click" data-service-name="Création de contenu">En savoir plus</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">▣</div>
+        <h3>Web Design</h3>
+        <p>Conception de sites web modernes, responsives et orientés conversion.</p>
+        <a href="services.html#webdesign" class="btn btn-outline" data-track="service_click" data-service-name="Web Design">En savoir plus</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">↗</div>
+        <h3>Publicité digitale</h3>
+        <p>Création et optimisation de campagnes publicitaires pour maximiser votre retour sur investissement.</p>
+        <a href="services.html#pub" class="btn btn-outline" data-track="service_click" data-service-name="Publicité digitale">En savoir plus</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">◆</div>
+        <h3>Stratégie digitale</h3>
+        <p>Accompagnement stratégique complet pour structurer votre transformation digitale.</p>
+        <a href="services.html#strategie" class="btn btn-outline" data-track="service_click" data-service-name="Stratégie digitale">En savoir plus</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY US ================= -->
+<section style="background:var(--paper-alt);">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Pourquoi nous choisir ?</span>
+      <h2>Une méthode claire, des résultats mesurables</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item"><span class="num">01</span><h4>Approche data-driven</h4><p>Chaque décision s'appuie sur des données réelles issues de vos outils analytics.</p></div>
+      <div class="why-item"><span class="num">02</span><h4>Équipe pluridisciplinaire</h4><p>SEO, design, contenu et publicité travaillent main dans la main sur votre projet.</p></div>
+      <div class="why-item"><span class="num">03</span><h4>Transparence totale</h4><p>Un reporting clair et régulier sur les actions menées et leurs résultats.</p></div>
+      <div class="why-item"><span class="num">04</span><h4>Accompagnement sur-mesure</h4><p>Des stratégies adaptées à votre secteur, votre budget et vos objectifs.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-tag">Témoignages</span>
+      <h2>Ce que nos clients disent de nous</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <p>"Digitalia a complètement transformé notre visibilité en ligne en quelques mois seulement."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">L</div>
+          <div><div class="testi-name">Léa Morvan</div><div class="testi-role">Fondatrice, Atelier Lumen</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <p>"Un accompagnement stratégique précis, avec des recommandations toujours justifiées par les données."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">K</div>
+          <div><div class="testi-name">Karim Fassi</div><div class="testi-role">Directeur marketing, NovaBuild</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <p>"Notre taux de conversion a nettement progressé grâce au nouveau site et aux campagnes menées."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">S</div>
+          <div><div class="testi-name">Sofia Bernard</div><div class="testi-role">CEO, Bernard & Co</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="cta-final">
+  <div class="container">
+    <h2>Prêt à développer votre présence digitale ?</h2>
+    <p>Parlons de votre projet. Notre équipe vous répond sous 24h avec une première recommandation gratuite.</p>
+    <a href="contact.html" class="btn btn-light" data-track="cta_click" data-cta-location="footer_cta">Demander un devis</a>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Digitalia<span>.</span></a>
+        <p>Agence de marketing digital accompagnant les entreprises dans leur croissance en ligne.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html#seo">SEO</a></li>
+          <li><a href="services.html#webdesign">Web Design</a></li>
+          <li><a href="services.html#pub">Publicité digitale</a></li>
+          <li><a href="services.html#strategie">Stratégie digitale</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:contact@digitalia-agency.fr" data-track="contact_click" data-contact-type="email">contact@digitalia-agency.fr</a></li>
+          <li><a href="tel:+33100000000" data-track="contact_click" data-contact-type="phone">01 00 00 00 00</a></li>
+          <li>12 rue des Entrepreneurs, Paris</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Digitalia Agency — Projet universitaire fictif (L1 Marketing Digital)</span>
+      <span>Site de démonstration — aucune donnée réelle collectée</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
